@@ -1,10 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap');
 
+:root {
+  /* Everforest Medium Dark */
+  --ef-fg: #D3C6AA;
+  --ef-red: #E67E80;
+  --ef-yellow: #DBBC7F;
+  --ef-green: #A7C080;
+  --ef-blue: #7FBBB3;
+  --ef-purple: #D699B6;
+  --ef-aqua: #83C092;
+  --ef-orange: #E69875;
+  --ef-statusline-1: #A7C080;
+  --ef-statusline-2: #D3C6AA;
+  --ef-statusline-3: #E67E80;
+  --ef-grey-0: #7A8478;
+  --ef-grey-1: #859289;
+  --ef-grey-2: #9DA9A0;
+  --ef-bg-dim: #232A2E;
+  --ef-bg-0: #2D353B;
+  --ef-bg-1: #343F44;
+  --ef-bg-2: #3D484D;
+  --ef-bg-3: #475258;
+  --ef-bg-4: #4F585E;
+  --ef-bg-5: #56635F;
+  --ef-bg-red: #514045;
+  --ef-bg-yellow: #4D4C43;
+  --ef-bg-green: #425047;
+  --ef-bg-blue: #3A515D;
+  --ef-bg-purple: #4A444E;
+  --ef-bg-visual: #543A48;
+}
+
 html {
-  background-color: #232A2E;
+  background-color: var(--ef-bg-0);
   font-family: "Vollkorn", serif;
   font-optical-sizing: auto;
-  color: #D3C6AA;
+  color: var(--ef-fg);
 }
 
 body {
@@ -25,21 +56,21 @@ h1 {
 }
 
 a {
-  color: #7FBBB3;
+  color: var(--ef-blue);
 }
 
 a:visited {
-  color: #D699B6;
+  color: var(--ef-purple);
 }
 
 a:hover {
-  color: #DBBC7F;
+  color: var(--ef-yellow);
 }
 
 a:focus {
-  color: #DBBC7F;
+  color: var(--ef-yellow);
 }
 
 a:active {
-  color: #E67E80;
+  color: var(--ef-red);
 }
