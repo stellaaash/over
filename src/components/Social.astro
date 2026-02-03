@@ -2,4 +2,20 @@
 // TODO: Add an image for each socials link
 const { platform, link } = Astro.props;
 ---
+<style>
+  a {
+    padding: 0.5rem 1rem;
+    background-color: var(--ef-bg-blue);
+    text-decoration: none;
+  }
+
+  a:hover {
+    background-color: var(--ef-bg-yellow);
+  }
+
+  a:visited {
+    background-color: var(--ef-bg-purple);
+  }
+</style>
+
 <a href={link} target="_blank">{platform}</a>
