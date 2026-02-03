@@ -1,11 +1,12 @@
 ---
+import '../styles/global.css'
+
 const pageTitle = "About Me";
 
 const quote = "The aisling (Irish for 'dream' / 'vision', pronounced [ˈaʃl̠ʲəɲ], approximately /ˈæʃlɪŋ/ ASH-ling), or vision poem, is a mythopoeic poetic genre that developed during the late 17th and 18th centuries in Irish language poetry.";
 const quoteLink = "https://en.wikipedia.org/wiki/Aisling";
 
 const skills = ["HTML", "CSS", "C", "C++", "Docker"];
-const skillColor = "green";
 ---
 
 <html lang="en">
@@ -16,14 +17,12 @@ const skillColor = "green";
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <title>{pageTitle}</title>
-    <style define:vars={{skillColor}}>
+    <style>
       h1 {
-        color: darkgreen;
         font-size: 4rem;
       }
 
       .skill {
-        color: {skillColor};
         font-weight: bold;
       }
     </style>
