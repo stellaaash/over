@@ -84,6 +84,7 @@ a:active {
 }
 
 .nav-links {
+  display: none;
   width: 100%;
   margin: 0;
 }
@@ -98,8 +99,8 @@ a:active {
   text-transform: uppercase;
 }
 
-:has(.menu[aria-expanded="false"]) .nav-links {
-  display: none;
+:has(.menu[aria-expanded="true"]) .nav-links {
+  display: unset;
 }
 
 /* Larger screens */
