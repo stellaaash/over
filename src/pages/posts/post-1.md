@@ -1,14 +1,11 @@
 ---
-title: 'Hello world!'
+layout: ../../layouts/MarkdownPostLayout.astro
+title: 'Hello World!'
 pubDate: 2025-02-01
 description: 'I did it!'
 author: 'Aisling Fontaine'
 tags: ["astro", "blogging"]
 ---
-# Hello World!
-
-Published on: 2025-02-01
-
 I finally got myself to build an actual, working portfolio website (_trying not to jinx this_).
 
 ...listen, I know the title is lame but I had to do the classic thing for my first upload!
