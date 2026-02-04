@@ -1,36 +1,15 @@
 ---
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import '../styles/global.css'
-
+import BaseLayout from '../layouts/BaseLayout.astro';
 const pageTitle = "Dreams of Ash";
 
 const welcoming = true;
 const welcomeEmote = "https://cdn.discordapp.com/emojis/1095012855285293067.webp?size=96&animated=true"
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="icon" href="/favicon.ico" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <title>{pageTitle}</title>
-  </head>
-  <body>
-    <Header />
+<BaseLayout pageTitle={pageTitle}>
+  <h2>Aisling Fontaine's website</h2>
 
-    <h1>{pageTitle}</h1>
-    <h2>Aisling Fontaine's website</h2>
-
-    {welcoming &&
-      <img src={welcoming && welcomeEmote} alt="A welcoming GIF!"/>
-    }
-    <Footer />
-
-    <script>
-      import "../scripts/menu.js";
-    </script>
-  </body>
-</html>
+  {welcoming &&
+    <img src={welcoming && welcomeEmote} alt="A welcoming GIF!"/>
+  }
+</BaseLayout>
