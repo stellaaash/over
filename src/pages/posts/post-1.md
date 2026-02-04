@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
 title: 'Hello World!'
-pubDate: 2025-02-01
+pubDate: 2026-02-01
 description: 'I did it!'
 author: 'Aisling Fontaine'
 tags: ["astro", "blogging"]
